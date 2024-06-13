@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    Hola Ferremas
+    {% load static %}
+
+    <h3>{{nombre}} tiene un hijo llamado {{hijo.nombre}} de {{hijo.edad}} años de edad.</h3>
+
+    <p>Las comidas son:</p>
+    <ul>
+        {% for comida in comidas %}
+            <li>{{ comida }}</li>
+        {% endfor %}
+    </ul>
+
+    
+
+    
 </body>
 </html>
